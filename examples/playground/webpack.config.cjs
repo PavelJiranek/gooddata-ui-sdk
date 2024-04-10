@@ -16,6 +16,19 @@ const playgroundDefinitions = {
         "https://staging.dev-latest.stg11.panther.intgdc.com",
         "4dc4e033e611421791adea58d34d958c"
     ],
+    "tiger-stg-auto": [
+        "https://staging-automation.dev-latest.stg11.panther.intgdc.com",
+        "6eddbb13a0d243699ac0ce808603b43c",
+    ],
+    'demo-cloud':[
+        'https://demo.cloud.gooddata.com',
+        // 'd256a56db8db4173825564d1d4cbd2f9', // plugins
+        'c138cebce1d94c97b5d488998326eaec', // pji
+    ],
+    "zen": [
+      "https://zenqms-test.cloud.gooddata.com",
+      "5516094f-c617-4906-9167-56bf34c9e061"
+    ]
 };
 
 module.exports = async (env, argv) => {

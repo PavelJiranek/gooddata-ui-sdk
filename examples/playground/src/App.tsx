@@ -2,6 +2,8 @@
 import React, { useMemo } from "react";
 import { BackendProvider, WorkspaceProvider } from "@gooddata/sdk-ui";
 import { createBackend } from "./createBackend.js";
+// import { ExportDefinitions } from "./ExportDefinitions.js";
+import { Dashboard } from "@gooddata/sdk-ui-dashboard";
 
 function hasCredentialsSetup(): boolean {
     return !!process.env.TIGER_API_TOKEN;
@@ -16,7 +18,9 @@ const AppWithBackend: React.FC = () => {
     return (
         <BackendProvider backend={backend}>
             <WorkspaceProvider workspace={WORKSPACE}>
+                <Dashboard dashboard={"b46c4937-7ae5-4b91-bc91-bc66df5a8955"} />
                 {/* Build your playground components under the playground directory.*/}
+                {/*<ExportDefinitions />*/}
             </WorkspaceProvider>
         </BackendProvider>
     );
